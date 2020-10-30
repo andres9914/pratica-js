@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--También hay una etiqueta <noscript>. 
+    Su contenido se mostrará si el navegador del cliente no admite scripts JS.-->
+    <!--Es una buena idea colocar scripts en la parte inferior del elemento <body>.
+    Esto puede mejorar la carga de la página,porque la visualización de HTML no está bloqueada
+    por la carga de scripts.-->
+    <script>
+        //El método document.write() debe usarse solo para pruebas 
+        document.write(" Hello World ");
+        //tags HTML con JS
+        document.write("<h1> Hello World </h1>");
+       
+    </script>
+    <script type="text/javascript">
+       // alert("¡Este es un cuadro de Alerta!");
+    </script>
+    <!--Tener scripts JS en archivos separados hace que su código sea mucho más legible y claro.-->
+    <!--Los scripts externos no pueden contener etiquetas <script> -->
+    <!--
+    <script src="dem.js">
+    </script>
+    -->
+    <br>
+    <!--Variables-->
+    <script>
+        var x_a = 100;
+        document.write(x_a, "<br>",name,"<br>");
+        var name = " \ ' soy un programador de backend\' ";
+        var num =38% 5;
+        document.write(num,"<br>");
+        
+    </script> <br>
+    <!--OPERADORES LOGICOS-->
+    <!--Los operadores lógicos le permiten conectar tantas expresiones como desee.-->
+    <script>
+        var age = 20;
+        var isadult = (age < 18)? 'demasiado joven':'adulto';
+        document.write(isadult,"<br>");
+        //while condicional
+        var x = 1;
+        while (x<=5){
+            document.write(x +'<br>');
+            x = x+1;
+        }
+    </script> <br>
+    <script>
+        var i=20;
+            do {  
+                document.write(i + "<br />");
+                i++;  
+            }
+            while (i<=25); 
+    </script> <br>
+    <script>
+        //Puede usar la palabra clave return para devolver algún valor inmediatamente desde el bucle dentro de una función. Esto también romperá el bucle.
+        for (i = 0; i <= 10; i++) {
+            if (i == 5) {
+            break; 
+            }
+        document.write(i + "<br />");
+        }
+        document.write("<br>");
+        //El valor 5 no se imprime, porque continua omite esa iteración del ciclo.
+
+        for (i = 0; i <= 10; i++) {
+            if (i == 5) {
+            continue; 
+            }
+        document.write(i + "<br />");
+        }
+
+        var sum=0; 
+        for(i=4; i<8; i++) {
+        if (i == 6) {
+            continue; 
+        }
+        sum += i;
+        }
+        document.write(sum);
+
+    </script>
+</body>
+
+</html>
