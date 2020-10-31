@@ -39,3 +39,43 @@ document.write(person["age"]);
 document.write("<br>" + "<br>");
 //Objeto Math (metematica)
 document.write(Math.sqrt(81));
+//Objeto Date (Fecha)
+/* JavaScript cuenta los meses del 0 al 11. Enero es 0 y diciembre es 11.
+Los objetos de fecha son estáticos, en lugar de dinámicos. El tiempo de la computadora avanza, pero los objetos de fecha no cambian, una vez creados.*/
+var d = new Date();
+//d stores the current date and time
+/*
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+*/
+//Fri Jan 02 1970 00:00:00
+var d1 = new Date(86400000);
+
+//Fri Jan 02 2015 10:42:00
+var d2 = new Date("January 2, 2015 10:42:00");
+
+//Sat Jun 11 1988 11:42:00
+var d3 = new Date(88, 5, 11, 11, 42, 0, 0);
+/*
+//Reloj
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    document.body.innerHTML = hours + ":" + mins + ":" + secs;
+}
+setInterval(printTime, 1000);
+*/
+document.write("<br>" + "<br>");
+//setInterval//
+/*El método setInterval () llama a una función o evalúa una expresión a intervalos específicos (en milisegundos). Continuará llamando a la función hasta que se llame a clearInterval () o se cierre la ventana. Por ejemplo:*/
+/*
+function myAlert() {
+    alert("Hi");
+}
+setInterval(myAlert, 3000);
+clearInterval(myAlert, 0);
+*/
+//Escriba el nombre de la función sin paréntesis al pasarlo al método setInterval.

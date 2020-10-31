@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="dom-eventos.js">
+    </script>
+    <h4 id="uno" class="dos">joder si funciona</h5>
+        <button onclick="myFunction()">Try it</button>
+
+        <div id="demo"></div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("uno").innerHTML;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+        <p>hi</p>
+        <p>hello</p>
+        <p>hi</p>
+        <script>
+            var arr = document.getElementsByTagName("p");
+            for (var x = 0; x < arr.length; x++) {
+                arr[x].innerHTML = "Hello fucking dog";
+            }
+            /*Usamos la propiedad length de la matriz para recorrer todos los elementos seleccionados en el ejemplo anterior.*/
+        </script>
+        <div class="pratica">como estas bro ?</div>
+
+
+        <div id="test">
+            <p>some text</p>
+            <p>some other text</p>
+        </div>
+        <!--El código anterior cambia el texto de ambos párrafos a "texto nuevo".-->
+        <script>
+            var a = document.getElementById("test");
+            var arr = a.childNodes;
+            for (var x = 0; x <
+                arr.length; x++) {
+                arr[x].innerHTML = "new text";
+            }
+        </script>
+
+</body>
+
+</html>
